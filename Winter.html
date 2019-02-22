@@ -1,87 +1,120 @@
 <!DOCTYPE html>
-  <html>
-  <head>
+<html>
 
-<title>Roots</title>
+<head>
+  <title>Roots</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-crossorigin="anonymous">
-<link rel="stylesheet" type = "text/css" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type = "text/css" href="styles.css">
+  <!-- <link rel="scriptsheet" href="script.js"> -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-  <body>
-    <nav>
-      <div class="row">
+<body>
+  <nav>
+    <div class="row">
 
-      <center>
-        <div class="col-sm-2"><a href ="index.html" class="btnMenu" >Home</a></div>
-        <div class="col-sm-2"><a href="Winter.html"class="btnMenu" >Winter</a></div>
-        <div class="col-sm-2"><a href ="Summer.html" class="btnMenu" >Summer</a></div>
-        <div class="col-sm-2"><a href="About.html" class="btnMenu">About</a></div>
-      </center>
-      <div class="col-sm-4"><input type="text" placeholder="Search.." align="right"></div>
-    </div>
-    </nav>
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img src="Images/4.jpg" style="width:750" height="660">
-</div>
-
-<div class="mySlides fade">
-  <img src="Images/3.jpg" style="width:750" height="660">
-</div>
-
-<div class="mySlides fade">
-  <img src="Images/2.jpg" style="width:750" height="660">
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 6 seconds
-}
-</script>
-  </body>
-=======
->>>>>>> 0d7c4e1f740339b6865d359e2fa6bd80c5773538
-
-  </body>
-  <div id='social-buttons'>
-    <button class='btn btn-lg btn-twitter'>Twitter</button>
-    <button class='btn btn-lg btn-facebook'>Facebook</button>
-    <button class='btn btn-lg btn-pinterest'>Pinterest</button>
+    <center>
+      <div class="col-sm-2"><a href ="index.html" class="btnMenu" >Home</a></div>
+      <div class="col-sm-2"><a href="Winter.html"class="btnMenu" >Winter</a></div>
+      <div class="col-sm-2"><a href ="Summer.html" class="btnMenu" >Summer</a></div>
+      <div class="col-sm-2"><a href="About.html" class="btnMenu">About</a></div>
+    </center>
+    <div class="col-sm-4"><input type="text" placeholder="Search.." align="right"></div>
   </div>
+  </nav>
+
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="Images/n-DOWNSIZE-CLOTHING-628x314.jpg" width="1000" height="350" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="Images/Clothing.jpg" width="1000" height="350"style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="Images/img_nature_wide.jpg" width="1000" height="350"style="width:100%">
+    </div>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
+  <centre>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PwpBsI-VPenV-RuWmIaYoZ5olOhPtFElQTeh-EJBEnUxq4Mb" alt="Model 1"> -->
+    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuh98kMG0_euicQUbJmQK2WeNRk0zBSbW4x-25ws9aZ0zqlgnV9w" alt="Model 2">-->
+    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_HkTsGx049cpCNBq3tLDGROWVJq-BfIzO5Ky9bJeweuyNC0D" alt="Model 3">-->
+
+</centre>
+<div id="Roots" class="text-center">
+  <h2><small>Roots</small><br />Write something herel..</h2>
+  <div class="row">
+  <div class="col-sm-4">
+    <img class="img-circle"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PwpBsI-VPenV-RuWmIaYoZ5olOhPtFElQTeh-EJBEnUxq4Mb">
+    <blockquote>
+    <p>Price : £15.00</p>
+    <small>Roots</small>
+  </blockquote>
+  </div>
+  <div class="col-sm-4">
+    <img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuh98kMG0_euicQUbJmQK2WeNRk0zBSbW4x-25ws9aZ0zqlgnV9w">
+    <blockquote>
+    <p>Price : £10.00</p>
+    <small>Roots</small>
+  </blockquote>
+  </div>
+  <div>
+    <img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_HkTsGx049cpCNBq3tLDGROWVJq-BfIzO5Ky9bJeweuyNC0D" >
+    <blockquote>
+    <p>Price : £20.00</p>
+  </blockquote>
+  </div>
+</div>
+</div>
+<div id='social-buttons'>
+  <button class='btn btn-lg btn-twitter'>Twitter</button>
+  <button class='btn btn-lg btn-facebook'>Facebook</button>
+  <button class='btn btn-lg btn-pinterest'>Pinterest</button>
+</div>
+
+  </centre>
+
+
+
+    <div id='social-buttons'>
+      <button class='btn btn-lg btn-twitter'>Twitter</button>
+      <button class='btn btn-lg btn-facebook'>Facebook</button>
+      <button class='btn btn-lg btn-pinterest'>Pinterest</button>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
 </html>
