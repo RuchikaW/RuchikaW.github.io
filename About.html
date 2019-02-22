@@ -14,16 +14,39 @@ crossorigin="anonymous">
 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 crossorigin="anonymous"></script>
 </head>
-
-
   <body>
-    <p> We are a website that is dedicated to selling clothes. We are a company whom believe that we may be the ROOTS to all clothing stores in the future.We have a vision. As the industry of fashion proceeds to make it's way to the future, we will be there ready to make the newest trends come to life. With easy accesible items on our website, we will bring you to the core of all things fashion! <p>
-      <h1>The roots to creativity</h1>
     <center>
     <a href ="index.html" class="btnMenu" >Home</a>
     <a href="Winter.html"class="btnMenu" >Winter</a>
     <a href ="Summer.html" class="btnMenu" >Summer</a>
     <a href="About.html" class=btnMenu>About</a>
+    <p> We are a website that is dedicated to selling clothes. We are a company whom believe that we may be the ROOTS to all clothing stores in the future.We have a vision. As the industry of fashion proceeds to make it's way to the future, we will be there ready to make the newest trends come to life. With easy accesible items on our website, we will bring you to the core of all things fashion! <p>
+      <h1>The roots to creativity</h1>
+      <div class="container">
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+
+
+
 
     <div id='social-buttons'>
       <button class='btn btn-lg btn-twitter'>Twitter</button>
