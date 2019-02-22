@@ -19,28 +19,32 @@ crossorigin="anonymous"></script>
 
 <body>
 
-<!-- <nav class="navbar">
+
     <center>
-      <div class="rightnav">
-        <input type="text" placeholder="Search..">
-      </div> -->
-<center>
-      <img src="Images/rootslogo.png " width=" 100" height="40">
+      <center>
+
+
+
+
     <a href ="index.html" class="btnMenu" >Home</a>
     <a href="Winter.html"class="btnMenu" >Winter</a>
+    <a href ="Spring.html" class="btnMenu" >Spring</a>
     <a href ="Summer.html" class="btnMenu" >Summer</a>
-    <a href="About.html" class="btnMenu">About</a>
+    <a href="Autumn.html" class="btnMenu">Autumnn</a>
+    <a href="About.html" class=btnMenu>About</a>
+</center>
 
 
-  </center>
-  </nav>
 
-  <div class="slideshow-container">
 
   <div class="mySlides fade">
     <img src="Images/n-DOWNSIZE-CLOTHING-628x314.jpg" width="1000" height="350" style="width:100%">
   </div>
 
+<div class="mySlides fade">
+  <img src="Images/Clothing.jpg" style="width:100%">
+</div>
+=======
   <div class="mySlides fade">
     <img src="Images/Clothing.jpg" width="1000" height="350"style="width:100%">
   </div>
@@ -49,37 +53,57 @@ crossorigin="anonymous"></script>
     <img src="Images/img_nature_wide.jpg" width="1000" height="350"style="width:100%">
   </div>
 
-  </div>
-  <br>
 
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
+<div class="mySlides fade">
+  <img src="Images/img_nature_wide.jpg" style="width:100%">
+</div>
 
-  <script>
-  var slideIndex = 0;
-  showSlides();
+</div>
+<br>
 
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  </script>
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
+<nav class="navbar">
+    <center>
+      <div class="rightnav">
+        <input type="text" placeholder="Search..">
+      </div>
+
+      <img src=" " alt= "logo">
+    <a href ="index.html" class="btnMenu" >Home</a>
+    <a href="Winter.html"class="btnMenu" >Winter</a>
+    <a href ="Summer.html" class="btnMenu" >Summer</a>
+    <a href="About.html" class="btnMenu">About</a>
+
+
+  </center>
+  </nav>
 
 
 
@@ -95,34 +119,31 @@ crossorigin="anonymous"></script>
   <div class="row">
   <div class="col-sm-4">
     <img class="img-circle"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PwpBsI-VPenV-RuWmIaYoZ5olOhPtFElQTeh-EJBEnUxq4Mb">
-
     <blockquote>
     <p>Price : £15.00</p>
     <small>Roots</small>
   </blockquote>
   </div>
   <div class="col-sm-4">
-
     <img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuh98kMG0_euicQUbJmQK2WeNRk0zBSbW4x-25ws9aZ0zqlgnV9w">
-
     <blockquote>
     <p>Price : £10.00</p>
     <small>Roots</small>
   </blockquote>
   </div>
   <div>
-
-    <div class="col-sm-4">
-    <img class="img-circle" src="images/k.jpg" alt="Model 3">
+    <img class="img-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_HkTsGx049cpCNBq3tLDGROWVJq-BfIzO5Ky9bJeweuyNC0D" >
     <blockquote>
     <p>Price : £20.00</p>
   </blockquote>
   </div>
 </div>
 </div>
-
+<div id='social-buttons'>
+  <button class='btn btn-lg btn-twitter'>Twitter</button>
+  <button class='btn btn-lg btn-facebook'>Facebook</button>
+  <button class='btn btn-lg btn-pinterest'>Pinterest</button>
 </div>
-
 
   </body>
 </html>
