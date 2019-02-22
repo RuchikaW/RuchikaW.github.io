@@ -21,6 +21,7 @@ body {
 	text-decoration: none;
 } */
 
+
 body {
   background-color: powderblue;
 }
@@ -63,16 +64,7 @@ img {vertical-align: middle;}
 
 
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+
 
 .active {
   background-color: #717171;
