@@ -19,13 +19,13 @@ crossorigin="anonymous"></script>
 
 <body>
 
-<nav class="navbar">
+<!-- <nav class="navbar">
     <center>
       <div class="rightnav">
         <input type="text" placeholder="Search..">
-      </div>
-
-      <img src=" " alt= "logo">
+      </div> -->
+<center>
+      <img src="Images/rootslogo.png " width=" 100" height="40">
     <a href ="index.html" class="btnMenu" >Home</a>
     <a href="Winter.html"class="btnMenu" >Winter</a>
     <a href ="Summer.html" class="btnMenu" >Summer</a>
@@ -34,6 +34,55 @@ crossorigin="anonymous"></script>
 
   </center>
   </nav>
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Images/n-DOWNSIZE-CLOTHING-628x314.jpg" width="1000" length="350" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/Clothing.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/img_nature_wide.jpg" style="width:100%">
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+
+
 
 <centre>
 
