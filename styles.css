@@ -45,8 +45,13 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
+.nav{
+  background-color: black;
+}
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <style>
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -58,7 +63,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
-  padding: 60px; 
+  padding: 60px;
 }
 
 
@@ -87,12 +92,12 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
