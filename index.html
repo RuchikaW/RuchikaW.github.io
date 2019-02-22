@@ -8,15 +8,19 @@
 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 crossorigin="anonymous">
 <link rel="stylesheet" type = "text/css" href="styles.css">
+<!-- <link rel="scriptsheet" href="script.js"> -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 crossorigin="anonymous"></script>
+
 </head>
 <body>
+  <div class="topnav">
+  <input type="text" placeholder="Search..">
+  </div>
 
-<div class="topnav">
     <center>
       <img src=" "alt= logo">
     <a href ="index.html" class="btnMenu" >Home</a>
@@ -25,8 +29,6 @@ crossorigin="anonymous"></script>
     <a href ="Summer.html" class="btnMenu" >Summer</a>
     <a href="Autumn.html" class="btnMenu">Autumnn</a>
     <a href="About.html" class=btnMenu>About</a>
-    <input type="text" placeholder="Search..">
-</div>
 </center>
 
 =======
@@ -40,32 +42,68 @@ crossorigin="anonymous"></script>
         background-color: #dddddd;
       }
 
-      li {
-        float: left;
-      }
+<body>
 
-      li a {
-        display: block;
-        padding: 8px;
-      }
-      </style>
-      <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#winter">Winter</a></li>
-    <li><a href="#summer">Summer</a></li>
-    <li><a href="#contact us">Contact us</a></li>
-  </ul>
-<div class="rightnav">
-  <input type="text" placeholder="Search..">
+    <center>
+
+    <a href ="index.html" class="btnMenu" >Home</a>
+    <a href="Winter.html"class="btnMenu" >Winter</a>
+    <a href ="Spring.html" class="btnMenu" >Spring</a>
+    <a href ="Summer.html" class="btnMenu" >Summer</a>
+    <a href="Autumn.html" class="btnMenu">Autumnn</a>
+    <a href="About.html" class=btnMenu>About</a>
+</center>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Images/n-DOWNSIZE-CLOTHING-628x314.jpg" style="width:100%">
 </div>
-<centre>
-  <div class="w3-content" style="max-width:400px">
-  <div class="mySlides w3-container w3-red">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PwpBsI-VPenV-RuWmIaYoZ5olOhPtFElQTeh-EJBEnUxq4Mb" alt="Model 1">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuh98kMG0_euicQUbJmQK2WeNRk0zBSbW4x-25ws9aZ0zqlgnV9w" alt="Model 2">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_HkTsGx049cpCNBq3tLDGROWVJq-BfIzO5Ky9bJeweuyNC0D" alt="Model 3">
-  </div>
-</centre>
->>>>>>> 8dc6fb21e31bbf26bf23d6f5efd57e99c58dc60e
+
+<div class="mySlides fade">
+  <img src="Images/Clothing.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/img_nature_wide.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+>>>>>>> 470bc55d5ef027e78dc717a5c12fd7780e0edf91
   </body>
 </html>
